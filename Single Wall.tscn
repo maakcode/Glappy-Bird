@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://images/stick_wood.png" type="Texture" id=1]
+[ext_resource path="res://images/head_wood.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 30, 369 )
+
+[node name="Single Wall" type="Area2D"]
+
+[node name="Head" type="Sprite" parent="."]
+position = Vector2( 0, 123 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 2 )
+
+[node name="Stick" type="Sprite" parent="."]
+position = Vector2( -94, 511 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+offset = Vector2( 47, -71 )
+
+[node name="Stick2" type="Sprite" parent="."]
+position = Vector2( -94, 757 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 1 )
+offset = Vector2( 47, -71 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 369 )
+shape = SubResource( 1 )

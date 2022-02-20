@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Single Wall.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Double Wall.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 120 )
+
+[node name="Double Wall" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Wall" type="Node2D" parent="."]
+
+[node name="Top Wall" parent="Wall" instance=ExtResource( 1 )]
+position = Vector2( 0, -120 )
+rotation = -3.14159
+monitoring = false
+
+[node name="Bottom Wall" parent="Wall" instance=ExtResource( 1 )]
+position = Vector2( 0, 120 )
+monitoring = false
+
+[node name="Score" type="Node2D" parent="."]
+
+[node name="Score" type="Area2D" parent="Score"]
+monitoring = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Score/Score"]
+shape = SubResource( 1 )
+
+[node name="VisibilityNotifier2D" type="VisibilityNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibilityNotifier2D" to="." method="_on_VisibilityNotifier2D_screen_exited"]

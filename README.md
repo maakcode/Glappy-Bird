@@ -1,7 +1,7 @@
 # Flappy Bird Clone 
 A Clone of Flappy Bird made in Godot Engine.
 
-https://user-images.githubusercontent.com/11623298/154845987-48535eb9-e813-4b58-862e-2f9e92680b45.mov
+https://user-images.githubusercontent.com/11623298/154846500-b8999922-23ae-466b-b9a3-9ed69fe8340a.mov
 
 # CREDITS
 ## Shooting Gallery pack

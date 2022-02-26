@@ -75,6 +75,10 @@ ui_home={
 "events": [  ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [layer_names]
 
 2d_render/layer_1="Duck"

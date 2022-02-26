@@ -2,8 +2,8 @@ extends Node2D
 
 export(PackedScene) var wall_scene
 
-const duck_initial_position = Vector2(256, 300)
-const initial_wall_x: float = 1239.0
+const duck_initial_position = Vector2(150, 300)
+const initial_wall_x: float = 700.0
 const initial_wall_velocity = Vector2(-200.0, 0)
 const initial_wall_spawn_interval: float = 1.6
 const minimum_wall_spawn_interval: float = 0.8

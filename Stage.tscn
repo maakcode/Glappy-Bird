@@ -19,7 +19,7 @@ script = ExtResource( 4 )
 wall_scene = ExtResource( 1 )
 
 [node name="Duck" parent="." instance=ExtResource( 2 )]
-position = Vector2( 256, 113 )
+position = Vector2( 150, 113 )
 
 [node name="Screen Area" type="Area2D" parent="."]
 visible = false
@@ -37,10 +37,9 @@ wait_time = 1.6
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = 494.0
-margin_top = 30.0
-margin_right = 539.0
-margin_bottom = 223.0
+margin_left = 277.5
+margin_right = 322.5
+margin_bottom = 193.0
 grow_horizontal = 2
 custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
 custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )

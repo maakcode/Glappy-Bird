@@ -11,7 +11,7 @@ var score: int = 0
 
 
 func _ready() -> void:
-	reset_duck()
+	reset_duck(false)
 	$'Wall Timer'.start()
 
 
@@ -37,7 +37,9 @@ func _on_Duck_area_exited(area: Area2D) -> void:
 	reset_score()
 
 
-func reset_duck() -> void:
+func reset_duck(is_crashed: bool = true) -> void:
+	if is_crashed: $'Duck'.crash()
+
 	$'Duck'.position = duck_initial_position
 	$'Duck'.v = Vector2(0, -1) * $'Duck'.jump_speed
 	$'Duck/Jump Timer'.start()

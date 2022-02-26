@@ -14,6 +14,10 @@ func _physics_process(delta: float) -> void:
 
 
 func jump(delta: float) -> void:
-	$'Sound'.play()
+	$'Jump Sound'.play()
 	v.y = -jump_speed
 	$'Jump Timer'.start()
+
+
+func crash() -> void:
+	$'Crash Sound'.play()

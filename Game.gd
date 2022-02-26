@@ -55,6 +55,7 @@ func reset_walls() -> void:
 
 
 func scored() -> void:
+	$'Score Sound'.play()
 	score += 1
 	$'Label'.text = str(score)
 	wall_velocity.x -= 5

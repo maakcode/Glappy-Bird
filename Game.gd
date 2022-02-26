@@ -5,13 +5,17 @@ export(PackedScene) var wall_scene
 const duck_initial_position = Vector2(256, 300)
 const initial_wall_x: float = 1239.0
 const initial_wall_velocity = Vector2(-200.0, 0)
+const initial_wall_spawn_interval: float = 1.6
+const minimum_wall_spawn_interval: float = 0.8
 
 var wall_velocity: Vector2 = initial_wall_velocity
+var wall_spawn_interval: float = initial_wall_spawn_interval
 var score: int = 0
 
 
 func _ready() -> void:
 	reset_duck(false)
+	$'Wall Timer'.wait_time = wall_spawn_interval
 	$'Wall Timer'.start()
 
 
@@ -47,11 +51,14 @@ func reset_duck(is_crashed: bool = true) -> void:
 
 
 func reset_walls() -> void:
+	wall_spawn_interval = initial_wall_spawn_interval
 	wall_velocity = initial_wall_velocity
 
 	for n in $'Walls'.get_children():
 		$'Walls'.remove_child(n)
 		n.queue_free()
+
+	$'Wall Timer'.wait_time = wall_spawn_interval
 
 
 func scored() -> void:
@@ -59,10 +66,15 @@ func scored() -> void:
 	score += 1
 	$'Label'.text = str(score)
 
-	if score % 10 == 0: $'Duck'.cry()
+	if score % 10 == 0:
+		$'Duck'.cry()
+		if wall_spawn_interval > minimum_wall_spawn_interval:
+			wall_spawn_interval = max(wall_spawn_interval - 0.2, minimum_wall_spawn_interval)
 
 	wall_velocity.x -= 5
 	set_walls_speed(wall_velocity)
+	$'Wall Timer'.wait_time = wall_spawn_interval
+	print(wall_spawn_interval)
 
 
 func reset_score() -> void:

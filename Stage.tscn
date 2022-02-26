@@ -32,7 +32,7 @@ shape = SubResource( 2 )
 [node name="Walls" type="Node2D" parent="."]
 
 [node name="Wall Timer" type="Timer" parent="."]
-wait_time = 1.5
+wait_time = 1.6
 
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5

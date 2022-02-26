@@ -21,3 +21,6 @@ func jump(delta: float) -> void:
 
 func crash() -> void:
 	$'Crash Sound'.play()
+
+func cry() -> void:
+	$'Cry Sound'.play()

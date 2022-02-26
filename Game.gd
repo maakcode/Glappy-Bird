@@ -58,6 +58,9 @@ func scored() -> void:
 	$'Score Sound'.play()
 	score += 1
 	$'Label'.text = str(score)
+
+	if score % 10 == 0: $'Duck'.cry()
+
 	wall_velocity.x -= 5
 	set_walls_speed(wall_velocity)
 

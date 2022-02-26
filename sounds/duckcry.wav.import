@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/duckcry.wav-fba8d3fc67e53664a5ce48b5b164a2bc.sample"
+
+[deps]
+
+source_file="res://sounds/duckcry.wav"
+dest_files=[ "res://.import/duckcry.wav-fba8d3fc67e53664a5ce48b5b164a2bc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

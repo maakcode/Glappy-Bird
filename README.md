@@ -4,7 +4,7 @@ A Clone of Flappy Bird made in Godot Engine.
 https://user-images.githubusercontent.com/11623298/156867716-6d79d630-f44d-44df-a95a-4245c5f8e627.mov
 
 # How to play
-<https://makeeyaf.github.io/Glappy-Bird>
+<https://maakcode.github.io/Glappy-Bird>
 
 # CREDITS
 ## Shooting Gallery pack

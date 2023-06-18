@@ -1,6 +1,6 @@
 extends Node2D
 
-export(PackedScene) var wall_scene
+@export var wall_scene: PackedScene
 
 const duck_initial_position = Vector2(150, 300)
 const initial_wall_x: float = 700.0
@@ -33,7 +33,7 @@ func _on_Duck_area_entered(area: Area2D) -> void:
 
 
 func _on_Duck_area_exited(area: Area2D) -> void:
-	if area != $'Screen Area': return
+	if area != $'Screen Area3D': return
 
 	print('Duck out of box')
 	reset_duck()
@@ -88,8 +88,8 @@ func set_walls_speed(value: Vector2):
 
 
 func create_wall() -> void:
-	var wall = wall_scene.instance()
-	wall.position = Vector2(initial_wall_x, rand_range(150, 450))
+	var wall = wall_scene.instantiate()
+	wall.position = Vector2(initial_wall_x, randf_range(150, 450))
 	wall.velocity = wall_velocity
 	$'Walls'.add_child(wall)
 

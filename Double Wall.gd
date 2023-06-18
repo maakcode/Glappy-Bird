@@ -1,6 +1,6 @@
 extends Node2D
 
-export var velocity = Vector2.ZERO
+@export var velocity = Vector2.ZERO
 
 
 func _ready() -> void:

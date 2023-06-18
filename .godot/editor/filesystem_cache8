@@ -1,0 +1,24 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1687055221
+default_env.tres::Environment::5213319012678772413::1687055218::0::1::::<><>::
+Double Wall.gd::GDScript::-1::1677758932::0::1::::<>Node2D<>::
+Double Wall.tscn::PackedScene::-1::1677758932::0::1::::<><>::res://Single Wall.tscn<>res://Double Wall.gd
+Duck.gd::GDScript::-1::1677758932::0::1::::<>Area2D<>::
+Duck.tscn::PackedScene::-1::1677758932::0::1::::<><>::res://images/duck_yellow.png<>res://Duck.gd<>res://sounds/jump.wav<>res://sounds/crash.wav<>res://sounds/duckcry.wav
+Game.gd::GDScript::-1::1677762751::0::1::::<>Node2D<>::
+icon.png::CompressedTexture2D::1459006342417667980::1671849578::1677758945::1::::<><>::
+monogram.ttf::FontFile::883361930927432021::1671849578::1677758945::1::::<><>::
+README.md::TextFile::-1::1671849578::0::1::::<><>::
+Single Wall.tscn::PackedScene::-1::1677758932::0::1::::<><>::res://images/stick_wood.png<>res://images/head_wood.png
+Stage.tscn::PackedScene::7189007857753062756::1687055218::0::1::::<><>::res://Double Wall.tscn<>res://Duck.tscn<>res://Game.gd<>uid://upujcfy4d11k
+::res://docs/::1677758956
+index.png::CompressedTexture2D::141474258450956165::1671849578::1677758945::1::::<><>::
+::res://images/::1677758956
+duck_yellow.png::CompressedTexture2D::3928205508848645954::1671849578::1677758945::1::::<><>::
+head_wood.png::CompressedTexture2D::4285899131480200661::1671849578::1677758945::1::::<><>::
+stick_wood.png::CompressedTexture2D::425583889435808721::1671849578::1677758945::1::::<><>::
+::res://sounds/::1677758956
+crash.wav::AudioStreamWAV::909748564465412546::1671849578::1677758945::1::::<><>::
+duckcry.wav::AudioStreamWAV::6183816969011365511::1671849578::1677758945::1::::<><>::
+jump.wav::AudioStreamWAV::5315536133121204258::1671849578::1677758945::1::::<><>::
+scores.wav::AudioStreamWAV::1435973064972092814::1671849578::1677758945::1::::<><>::

@@ -1,7 +1,7 @@
 extends Area2D
 
 
-export var jump_speed: float = 500
+@export var jump_speed: float = 500
 
 var v = Vector2()
 var is_jump_pressed: bool = false
@@ -20,8 +20,8 @@ func _unhandled_input(event: InputEvent) -> void:
 		is_jump_pressed = true
 
 
-func _unhandled_key_input(event: InputEventKey) -> void:
-	if !is_jump_pressed and event is InputEventKey and (event.scancode == KEY_SPACE or event.scancode == KEY_ENTER):
+func _unhandled_key_input(event: InputEvent) -> void:
+	if !is_jump_pressed and event is InputEventKey and (event.keycode == KEY_SPACE or event.keycode == KEY_ENTER):
 		if !event.pressed or event.echo: return
 
 		is_jump_pressed = true

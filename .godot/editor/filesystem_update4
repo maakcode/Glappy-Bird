@@ -1,2 +1,4 @@
 res://default_env.tres
 res://Stage.tscn
+res://Single Wall.tscn
+res://Double Wall.tscn

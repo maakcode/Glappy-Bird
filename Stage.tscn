@@ -1,13 +1,13 @@
 [gd_scene load_steps=7 format=3 uid="uid://daon5554xuwoa"]
 
-[ext_resource type="PackedScene" path="res://Double Wall.tscn" id="1"]
+[ext_resource type="PackedScene" uid="uid://cgp6n281avhw2" path="res://Double Wall.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Duck.tscn" id="2"]
 [ext_resource type="Script" path="res://Game.gd" id="4"]
 [ext_resource type="FontFile" uid="uid://mt53vjw30d7b" path="res://monogram.ttf" id="4_ymqes"]
 [ext_resource type="AudioStream" uid="uid://upujcfy4d11k" path="res://sounds/scores.wav" id="5"]
 
 [sub_resource type="RectangleShape2D" id="2"]
-size = Vector2(512, 300)
+size = Vector2(600, 648)
 
 [node name="Stage" type="Node2D"]
 script = ExtResource("4")
@@ -17,12 +17,12 @@ wall_scene = ExtResource("1")
 position = Vector2(150, 113)
 
 [node name="Screen Area3D" type="Area2D" parent="."]
-visible = false
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Screen Area3D"]
-position = Vector2(512, 300)
+position = Vector2(300, 324)
 shape = SubResource("2")
+debug_color = Color(0, 0.6, 0.701961, 0.419608)
 
 [node name="Walls" type="Node2D" parent="."]
 

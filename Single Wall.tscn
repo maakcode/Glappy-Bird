@@ -1,30 +1,30 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://bqh1ca51ltljy"]
 
-[ext_resource path="res://images/stick_wood.png" type="Texture2D" id=1]
-[ext_resource path="res://images/head_wood.png" type="Texture2D" id=2]
+[ext_resource type="Texture2D" uid="uid://gcfkl8kfeuar" path="res://images/stick_wood.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://b2ceergqjqqd6" path="res://images/head_wood.png" id="2"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 30, 369 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(30, 736)
 
 [node name="Single Wall" type="Area2D"]
 
 [node name="Head" type="Sprite2D" parent="."]
-position = Vector2( 0, 123 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 2 )
+position = Vector2(0, 123)
+scale = Vector2(2, 2)
+texture = ExtResource("2")
 
 [node name="Stick" type="Sprite2D" parent="."]
-position = Vector2( -94, 511 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 1 )
-offset = Vector2( 47, -71 )
+position = Vector2(-94, 511)
+scale = Vector2(2, 2)
+texture = ExtResource("1")
+offset = Vector2(47, -71)
 
 [node name="Stick2" type="Sprite2D" parent="."]
-position = Vector2( -94, 757 )
-scale = Vector2( 2, 2 )
-texture = ExtResource( 1 )
-offset = Vector2( 47, -71 )
+position = Vector2(-94, 757)
+scale = Vector2(2, 2)
+texture = ExtResource("1")
+offset = Vector2(47, -71)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 369 )
-shape = SubResource( 1 )
+position = Vector2(0, 368)
+shape = SubResource("1")

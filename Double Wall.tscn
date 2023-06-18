@@ -1,23 +1,23 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://cgp6n281avhw2"]
 
-[ext_resource path="res://Single Wall.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Double Wall.gd" type="Script" id=2]
+[ext_resource type="PackedScene" uid="uid://bqh1ca51ltljy" path="res://Single Wall.tscn" id="1"]
+[ext_resource type="Script" path="res://Double Wall.gd" id="2"]
 
-[sub_resource type="RectangleShape2D" id=1]
-size = Vector2( 10, 120 )
+[sub_resource type="RectangleShape2D" id="1"]
+size = Vector2(10, 240)
 
 [node name="Double Wall" type="Node2D"]
-script = ExtResource( 2 )
+script = ExtResource("2")
 
 [node name="Wall" type="Node2D" parent="."]
 
-[node name="Top Wall" parent="Wall" instance=ExtResource( 1 )]
-position = Vector2( 0, -120 )
+[node name="Top Wall" parent="Wall" instance=ExtResource("1")]
+position = Vector2(0, -120)
 rotation = -3.14159
 monitoring = false
 
-[node name="Bottom Wall" parent="Wall" instance=ExtResource( 1 )]
-position = Vector2( 0, 120 )
+[node name="Bottom Wall" parent="Wall" instance=ExtResource("1")]
+position = Vector2(0, 120)
 monitoring = false
 
 [node name="Score" type="Node2D" parent="."]
@@ -26,7 +26,7 @@ monitoring = false
 monitoring = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Score/Score"]
-shape = SubResource( 1 )
+shape = SubResource("1")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 

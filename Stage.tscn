@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://daon5554xuwoa"]
+[gd_scene load_steps=7 format=3 uid="uid://daon5554xuwoa"]
 
 [ext_resource type="PackedScene" path="res://Double Wall.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Duck.tscn" id="2"]
 [ext_resource type="Script" path="res://Game.gd" id="4"]
+[ext_resource type="FontFile" uid="uid://mt53vjw30d7b" path="res://monogram.ttf" id="4_ymqes"]
 [ext_resource type="AudioStream" uid="uid://upujcfy4d11k" path="res://sounds/scores.wav" id="5"]
 
 [sub_resource type="RectangleShape2D" id="2"]
@@ -36,6 +37,13 @@ offset_left = 277.5
 offset_right = 322.5
 offset_bottom = 193.0
 grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 4
+theme_override_constants/shadow_offset_y = 4
+theme_override_constants/outline_size = 2
+theme_override_fonts/font = ExtResource("4_ymqes")
+theme_override_font_sizes/font_size = 120
 text = "0
 "
 
